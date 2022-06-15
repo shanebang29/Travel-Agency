@@ -1,0 +1,243 @@
+/*Iphone 6/7/8 plus (16:9)*/
+
+@media (max-width: 990px){
+    .navbar-expand-lg{
+        padding: 10px;
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 420px){
+    /*banner */
+    .banner{
+        height: 750px;
+        background-size: 400px;
+        background-position: top right;
+        position: relative;
+    }
+    .navbar-collapse{
+        z-index: 2;
+    }
+    .banner .signup{
+        width: 100%;
+        height: 300px;
+        transform: translate(0);
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 5%;
+        border-bottom: 2px solid lightgrey
+    }
+    .banner .signup .title{
+        font-size: 40px;
+        text-align: center;
+        line-height: normal !important
+    }
+    .banner .signup .description{
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px
+    }
+    .banner .signup .signup-button,
+    .explore-section .explore-button{
+        margin: 0 auto !important;
+        font-size: 16px;
+        width: 150px;
+        height: 50px
+    }
+
+            /*-------explore section---------*/
+    .explore-section{
+        display: flex;
+        flex-direction: column-reverse !important;
+        overflow: hidden;
+    }
+    .explore-section .information-side{
+        padding: 0;
+        margin: 0;
+        position: unset;
+        width: 100%;
+        height: 537px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .explore-section .information-side .title{
+        font-size: 30px;
+        text-align: center
+    }
+    .explore-section .information-side .p2{
+        margin: 20px 10px;
+        text-align: center;
+        font-size: 16px
+    }
+    .explore-section .information-side .decoration{
+        margin: 0;
+    }
+    .explore-section .slider{
+        padding: 0;
+        width: 150%;
+        transform: translateX(-16.5%) !important;
+    }
+    .slider .item{
+        width: 100%;
+        margin: 5px;
+    }
+    .slider .rating{
+        display: inline-block !important;
+        width: 100%;
+        padding: 0px !important
+    }
+    .slider .rating i{
+        font-size: 15px !important;
+        letter-spacing: 0 !important;
+    }
+    .slider .rating p{
+        font-size: 15px !important
+    }
+    .slider .trip-name{
+        font-size: 16px !important;
+        left: 10px !important;
+        bottom: 50px !important
+    }
+    .slider .price{
+        position: unset !important;
+        width: 100% !important;
+        margin: 0;
+        opacity: 0;
+    }
+    .explore-section .slider .item.slick-current{
+        transform: translateY(-40px) !important
+    }
+    .explore-section .slider .item.slick-current .price{
+        opacity: 1
+    }
+    .order-section .book{
+        flex-direction: column;
+    }
+                /*-------------slide 0f explore section-------------*/
+    .explore-section .slick-list{
+        padding: 0 0px !important;
+    }
+                /*----------video gallery--------------*/
+    .title-section{
+        height: 330px;
+    }
+    .title-section .decoration{
+        margin-bottom: 20px;
+    }
+    .video-gallery{
+        width: 100%;
+        height: 630px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .video-gallery .display{
+        width: 100%;
+        height: 37%;
+    }
+    .video-gallery .list-videos{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+    .video-gallery .display .mask{
+        width: 100%;
+        height: 12%;
+        left: 0;
+        bottom: 0;
+        padding: 3px 5px;
+        opacity: 1;
+    }
+  
+    .video-gallery .display .mask #demo{
+        background-size: 22px !important ;
+        width: 22px;
+        height: 22px;
+        margin: 0
+    }
+    .video-gallery .display .mask h3,
+    .video-gallery .display .mask p{
+        display: none;
+    }
+    .video-gallery .list-videos{
+        height: 350px;
+    }
+    .video-gallery .list-videos .cursor .text{
+        padding: 0;
+    }
+    .video-gallery .list-videos .cursor .text h5,
+    .video-gallery .list-videos .cursor .text p{
+        margin: 10px auto
+    }
+    .video-gallery .list-videos .thumbnail img{
+        width: 100%;
+        height: 100%
+    }
+}
+
+            /*travel categories*/
+.travel-categori{
+    height: 740px;
+    overflow: hidden;
+}
+.travel-categori .decoration{
+    margin-bottom: 20px;
+}
+.slider-categories {
+    height: 300px;
+    width: 228% !important;
+    transform: translateX(-28%);
+}
+.slider-categories .item{
+    margin: 10px;
+    height: 100%;
+}
+.slider-categories .slick-list{
+    padding: 0 50px!important;
+}
+.slider-categories .slick-track{
+    padding-top: 50px !important;
+}
+.slider-categories .slick-current{
+    transform: translateY(-20px) !important;
+}
+
+            /*travel experience*/
+.exp{
+    height: 600px
+}
+.exp .title-section{
+    margin: 0;
+    width: 100%
+}
+.exp .avatar{
+    padding: 0;
+    width: 100%;
+    height: 200px;
+}
+.exp .avatar .slick-list{
+    padding: 0 !important
+}
+.exp .avatar .slick-track{
+    margin-bottom: 0 !important
+}
+.exp .avatar .slick-dots{
+    left: 22.5%;
+    outline: none;
+}
+
+            /*hide all arrow button*/
+.exp .avatar .slick-next.slick-arrow,
+.exp .avatar .slick-prev.slick-arrow,
+.explore-section .slider .slick-prev.slick-arrow,
+.explore-section .slider .slick-next.slick-arrow,
+.slider-categories .slick-prev.slick-arrow,
+.slider-categories .slick-next.slick-arrow{
+    display: none !important;
+}
+
+.order-section .title{
+    text-align: center;
+}

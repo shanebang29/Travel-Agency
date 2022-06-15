@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+}
+@font-face {
+    src: url('fonts/NunitoSans-Regular.ttf');
+    font-family: nunito-regular;
+}
+@font-face{
+    src: url('fonts/NunitoSans-ExtraBold.ttf');
+    font-family: nunito-extrabold;
+}
+body{
+    font-family: nunito-regular;
+}
+
+        /*--------------navigation bar---------------*/
+.navbar{
+    margin-bottom: 72px;
+}
+.navbar .navbar-toggler{
+    border: none;
+    outline: none;
+}
+.navbar .active .nav-link{
+    color: #3984f3 !important;
+}
+.navbar .login{
+    width: 121px;
+    height: 44px;
+    color: #3984f3;
+    border: 3px solid #3984f3;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.navbar .login:hover{
+    background: #3984f3;
+    color: white;
+}
+.navbar-collapse ul li{
+    margin-right: 39px;
+}
+.navbar-collapse ul li a{
+    font-size: 16px;
+}
+.navbar-expand-lg{
+    padding: 44px 128px 0px 126px;
+}
+.navbar .navbar-brand img{
+    width: 140px;
+}
+
+    /*----------------------------banner------------------*/
+.banner{
+    width: 100%;
+    height: 1000px;
+    background-image: url('images/banner.png');
+    background-repeat: no-repeat;
+    background-position-x: 100% ;
+    background-position-y: 25%;
+    background-size: 875px
+}
+.signup{
+    width: 30%;
+    height: 30%;
+    transform: translate(126px, 224px);
+}
+.signup .title{
+    font-size: 50px;
+    font-family: 'nunito-extrabold';
+    line-height: 80px;
+    color: #091e40;
+}
+.signup .description{
+    font-size: 18px;
+    color: #81858e;
+    margin: 40px auto 70px auto;
+    }
+.signup .signup-button,
+.information-side .explore-button{
+    width: 200px;
+    height: 57px;
+    color: white;
+    background: #3984f3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.signup .signup-button:hover{
+    border: 2px solid #3984f3;
+    background: transparent;
+    color: #3984f3;
+}
+
+/*--------------------slider-----------------*/
+.slider {
+    padding-right: 11%;
+    transform: translateX(-15%) !important;
+}
+.slider .slick-track{
+    padding-top: 60px;
+}
+.slider .slick-prev.slick-arrow{
+    z-index: 1000 !important;
+    position: absolute;
+    left: 410px;
+    bottom: 60px;
+    cursor: pointer;
+}
+.slider .slick-next.slick-arrow{
+    transform: translate(520px, -60px);
+    cursor: pointer;
+}
+.slider .item{
+    width: 1%;
+    margin: 25px;
+    position: relative;
+}
+.slider .item img{
+    width: 100%;
+}
+.slider .item .price{
+    position: absolute;
+    top: 30px;
+    background: #3984f3;
+    width: 90px;
+    height: 30px;
+    color: white;
+    text-align: center
+}
+.slider .item .trip-name{
+    position: absolute;
+    color: white;
+    bottom: 90px;
+    left: 20px;
+    font-size: 19px
+}
+.slider .item .rating{
+    display: flex;
+    padding: 25px 0px;
+    flex-direction: row;
+}
+.slider .item .rating i{
+    color: #3984f3;
+    padding-top: 4px;
+    letter-spacing: 8px;
+    font-size: 20px
+}
+.slider .item .rating .days{
+    margin-left: auto;
+    color: #a0a0a0;
+    font-size: 20px;
+}
+.slider .item .rating{
+    opacity: 0;
+}
+.slick-current{
+    transform: translateY(-70px);
+}
+.slick-current .rating{
+    opacity: 1 !important;
+}
+    
+        /*------------------- information-side section -----------------*/
+
+.explore-section{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+ .information-side{
+    width: 30%;
+    height: 65%;
+    margin: 0 100px 0 auto;
+    z-index: 10;
+    background: white;
+    padding-left: 17px;
+    position: absolute;
+    right: 0%;
+    top: 10%;
+}
+ .information-side .p2{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 80px auto 75px auto;
+    color: #81858e
+}
+ .information-side .title,
+.title-section .title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #091e40;
+}
+ .information-side .explore-button:hover{
+    background: white;
+    color: #3984f3;
+    border: 2px solid #3984f3;
+}
+ .information-side .decoration,
+.title-section .decoration{
+    height: 6px;
+    width: 78px;
+    background: #3984f3;
+    margin-top:20px
+}
+.title-section {
+    height: 250px;
+    text-align: center;
+}
+.title-section .decoration{
+    margin: auto auto 50px auto
+}
+   /*video section*/
+.video-gallery{
+    height: 500px;
+    width: 1400px;
+    margin: 50px auto 100px auto;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.video-gallery .display{
+    width: 65%;
+    height: 100%;
+    position:relative;
+}
+.video-gallery .list-videos{
+    width: 35%;
+    height: 100%;
+    margin-left: auto;
+    background: white;
+    overflow: scroll;
+}
+.video-gallery .list-videos .cursor{
+    width: 95%;
+    height: 25%;
+    margin: 10px auto 20px auto;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.video-gallery .list-videos .cursor:hover{
+  outline: 10px solid #f0f0f0;
+}
+.video-gallery .cursor .thumbnail{
+    margin-right: auto;
+    width: 40%;
+    height:100%;
+    background: lightskyblue
+}
+.video-gallery .cursor .text{
+    margin-left: auto;
+    width: 58%;
+    height: 100%;
+    padding-top: 8%;
+}
+.video-gallery .cursor .text h5,
+.video-gallery .cursor .text p{
+  margin-left: 20px;
+  font-weight: bold;
+  color: #091e40;
+}
+.video-gallery #slider{
+    width: 100%;
+    height: 100%;
+}
+.video-gallery .thumbnail img{
+    width: 200px;
+    height: 122px;
+}
+
+    /*--------------------- custom scrollbar ------------------*/
+
+.list-videos::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, );
+  border-radius: 0;
+  background-color: white;
+}
+.list-videos::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+.list-videos::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .0);
+  background-color: #d9d9d9;
+}
+
+  /*----------------------video section------------------*/
+
+.video-gallery .display .mask{
+    width: 98%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    left: 1%;
+    opacity: 0;
+    transition: 0.2s;
+    z-index: 10;
+}
+.video-gallery .display .mask:hover{
+  opacity: 0.5;
+}
+.video-gallery .mask #demo{
+    width: 65px;
+    height: 65px;
+    background: red;
+    border: transparent;
+    outline: none;
+    display: block;
+    margin: 20% auto ;
+}
+.video-gallery .mask h3,
+.video-gallery .mask p{
+    color: white;
+    display: block;
+    margin-left: 20px;
+}
+
+
+/*travel categori*/
+.travel-categori{
+    width: 100%;
+    height: 900px;
+}
+
+/* ---------------slider categories----------------*/
+.slider-categories .slick-list{
+    padding: 0 170px !important;
+    /*tăng phạm vi hiển thị 
+    số slick-slide theo chiều ngang*/
+}
+.slider-categories .slick-track{
+    padding-top: 5%;
+}
+.slider-categories .slick-current{
+    transform: translateY(-50px);
+}
+.slider-categories .item{
+    position: relative;
+    margin: 0 15px;
+}
+.slider-categories .item img{
+    width: 100%
+}
+.slider-categories .trip-name{
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    color: white;
+}
+.slider-categories .slick-prev.slick-arrow{
+    position: absolute;
+    bottom: -20%;
+    left: 45%;
+    cursor: pointer;
+}
+.slider-categories .slick-next.slick-arrow{
+    position: absolute;
+    bottom: -20%;
+    left: 52%;
+    cursor: pointer
+}
+
+/*--------------------style for exp------------*/
+.exp {
+    width: 100%;
+    height: 700px;
+}
+.exp .title-section{
+    width: 44%
+}
+
+/*------------style avatar slide------------------*/
+.avatar{
+    padding: 0 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column
+}
+.avatar .avatar-items{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px !important;
+}
+.avatar h5{
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+    color: #091e40
+}
+.avatar .slick-current{
+    transform: translateY(0);
+}
+.avatar .slick-list{
+    padding: 0 100px !important;
+}
+.avatar .slick-dots{
+  position: absolute;
+  top: 110%;
+  left: 43%
+}
+.avatar li button{
+  width: 30px;
+  height: 5px;
+  border: transparent;
+  border-radius: 20px;
+  color: transparent;
+}
+.avatar li {
+  list-style: none;
+  display: inline;
+  margin: 0 12px;
+}
+.avatar li.slick-active button{
+  background: #3984f3;
+  width: 60px;
+}
+.avatar li.slick-active{
+    margin: 0 0;
+}
+.avatar .slick-prev.slick-arrow{
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  z-index: 10;
+  cursor: pointer;
+}
+.avatar .slick-next.slick-arrow{
+  position: absolute;
+  right: 35%;
+  top: 50%;
+  cursor: pointer;
+}
+
+/*-----------order-section-------------*/
+.order-section{
+    height: 900px;
+    background: url('images/order-background.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.order-section h3{
+    color: white
+}
+.order-section p.title{
+    font-weight: bold;
+    color: white;
+    word-spacing: 8px;
+    font-size: 50px;
+}
+.order-section .book{
+    width: 80%;
+    display: flex;
+    margin-top: 40px;
+}
+.order-section .book .book-items p{margin-bottom: 0!important}
+.order-section .book .book-items{
+    padding: 10px 35px;
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    background: rgba(255, 255, 255, .3);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box !important;
+    color: white;
+    cursor: pointer;
+}
+.order-section .book-items i{
+    color: white;
+    margin-left: auto;
+}
+.order-section .book-now{
+  width: 300px;
+  height: 50px;
+  margin: 20px;
+  background: #3984f3;
+  color: white;
+  border: none;
+  text-align: center;
+  cursor: pointer
+}
+.order-section .book-now:hover{
+  background: rgba(57, 132, 243, 0.3)
+}
+/*-----------------footer---------------*/
+.footer {
+    width: 100%;
+    height: 297px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    display: inline-block;
+    background: -webkit-linear-gradient(left, black 33%, #c6c6c6 51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 40px 0 25px 0 !important;
+}
+.footer ul li{
+    display: inline-block;
+    margin: auto 20px;
+}
+.footer .foot-nav li a{
+    text-decoration: none;
+    color: black
+}
+.footer .normal{
+    color: #c6c6c6;
+}
+.footer .icon{
+    display: flex;
+    flex-direction: row;
+}
+.footer .icon li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:#3984f3;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+}
+.footer .icon li a{
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+}
